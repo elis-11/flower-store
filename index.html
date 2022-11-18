@@ -1,228 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Flower Store</title>
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <script defer src="./js/counter.js"></script>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-	<title>Roll Store</title>
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
+  <body>
+    <header class="header">
+      <div class="container text-center">
+        <img src="img/logo.png" width="92" alt="" />
+        <div class="display-4">Flower Delivery</div>
+        <p class="lead">prompty and beautiful</p>
+      </div>
+    </header>
 
-</head>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="row">
+            <!-- Flower --1-->
+            <div class="col-md-6">
+              <div class="card mb-4" data-id="01">
+                <img class="product-img" src="img/11.png" alt="" />
+                <div class="card-body text-center">
+                  <h4 class="item-title">Light pink roses</h4>
+                  <p>
+                    <small data-items-in-box class="text-muted">6 st.</small>
+                  </p>
 
-<body>
+                  <!-- Counter -->
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
+                    <!-- //Counter -->
 
-	<header class="header">
-		<div class="container text-center">
-			<img src="img/logo/logo.svg" width="92" alt="Суши и пицца">
-			<div class="display-4">Roll Delivery</div>
-			<p class="lead">prompty and tasty</p>
-		</div>
-	</header>
+                    <div class="price">
+                      <div class="price__weight">20 st.</div>
+                      <div class="price__currency">58 $</div>
+                    </div>
+                  </div>
 
-	<div class="container mb-5">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="row">
+                  <button
+                    data-cart
+                    type="button"
+                    class="btn btn-block btn-outline-warning"
+                  >
+                    + buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- // Flower -->
 
-					<!-- Roll -->
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="01">
-							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Philadelphia hit roll</h4>
-								<p><small data-items-in-box class="text-muted">6 st.</small></p>
+            <!-- Flower --2-->
+            <div class="col-md-6">
+              <div class="card mb-4" data-id="02">
+                <img class="product-img" src="img/22.png" alt="" />
+                <div class="card-body text-center">
+                  <h4 class="item-title">Peach roses</h4>
+                  <p>
+                    <small data-items-in-box class="text-muted">6 st.</small>
+                  </p>
 
-								<!-- Counter -->
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-								<!-- //Counter -->
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
 
-									<div class="price">
-										<div class="price__weight">180g.</div>
-										<div class="price__currency">300 $</div>
-									</div>
-								</div>
+                    <div class="price">
+                      <div class="price__weight">23 st.</div>
+                      <div class="price__currency">56 $</div>
+                    </div>
+                  </div>
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ buy now</button>
+                  <button
+                    data-cart
+                    type="button"
+                    class="btn btn-block btn-outline-warning"
+                  >
+                    + buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- // Flower -->
 
-							</div>
-						</div>
-					</div>
-					<!-- // Roll -->
+            <!-- Flower --3-->
+            <div class="col-md-6">
+              <div class="card mb-4" data-id="03">
+                <img class="product-img" src="img/33.png" alt="" />
+                <div class="card-body text-center">
+                  <h4 class="item-title">Beautiful Bunch of 15 Red Roses</h4>
+                  <p>
+                    <small data-items-in-box class="text-muted">6 st.</small>
+                  </p>
 
-					<!-- Roll -->
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="02">
-							<img class="product-img" src="img/roll/california-tempura.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">California Tempura</h4>
-								<p><small data-items-in-box class="text-muted">6 st.</small></p>
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
 
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
+                    <div class="price">
+                      <div class="price__weight">15 st.</div>
+                      <div class="price__currency">38 $</div>
+                    </div>
+                  </div>
 
-									<div class="price">
-										<div class="price__weight">205g.</div>
-										<div class="price__currency">250 $</div>
-									</div>
-								</div>
+                  <button
+                    data-cart
+                    type="button"
+                    class="btn btn-block btn-outline-warning"
+                  >
+                    + buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- // Flower -->
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ buy now</button>
+            <!-- Flower --4-->
+            <div class="col-md-6">
+              <div class="card mb-4" data-id="04">
+                <img class="product-img" src="img/44.png" alt="" />
+                <div class="card-body text-center">
+                  <h4 class="item-title">40 Red Roses</h4>
+                  <p>
+                    <small data-items-in-box class="text-muted">6 st.</small>
+                  </p>
 
-							</div>
-						</div>
-					</div>
-					<!-- // Roll -->
+                  <div class="details-wrapper">
+                    <div class="items counter-wrapper">
+                      <div class="items__control" data-action="minus">-</div>
+                      <div class="items__current" data-counter>1</div>
+                      <div class="items__control" data-action="plus">+</div>
+                    </div>
 
-					<!-- Roll -->
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="03">
-							<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Baked roll «California»</h4>
-								<p><small data-items-in-box class="text-muted">6 st.</small></p>
+                    <div class="price">
+                      <div class="price__weight">40 st.</div>
+                      <div class="price__currency">58 $</div>
+                    </div>
+                  </div>
 
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
+                  <button
+                    data-cart
+                    type="button"
+                    class="btn btn-block btn-outline-warning"
+                  >
+                    + buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- // Flower -->
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Cart -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h5 class="card-title">Your order</h5>
+              <div data-cart-empty class="alert alert-secondary" role="alert">
+                Cart is empty
+              </div>
+              <!-- cart-wrapper -->
+              <div class="cart-wrapper">
+                <!-- Cart item -->
+                <div class="cart-item" data-id="02">
+                  <div class="cart-item__top">
+                    <div class="cart-item__img">
+                      <img src="img/Flower/california-tempura.jpg" alt="" />
+                    </div>
+                    <div class="cart-item__desc">
+                      <div class="cart-item__title">Light pink roses</div>
+                      <div class="cart-item__weight">20 st. / 1205g.</div>
+                      <!-- <div class="cart-item__weight">6 st. / 205g.</div> -->
 
-									<div class="price">
-										<div class="price__weight">182g.</div>
-										<div class="price__currency">230 $</div>
-									</div>
+                      <!-- cart-item__details -->
+                      <div class="cart-item__details">
+                        <div class="items items--small counter-wrapper">
+                          <div class="items__control" data-action="minus">
+                            -
+                          </div>
+                          <div class="items__current" data-counter="">1</div>
+                          <div class="items__control" data-action="plus">+</div>
+                        </div>
 
-								</div>
+                        <div class="price">
+                          <div class="price__currency">58 $</div>
+                        </div>
+                      </div>
+                      <!-- // cart-item__details -->
+                    </div>
+                  </div>
+                </div>
+                <!-- // Cart item -->
+              </div>
+              <!-- // cart-wrapper -->
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ buy now</button>
+              <!-- Order costs -->
+              <div class="cart-total">
+                <p>
+                  <span class="h5">Delivery:</span>
+                  <span class="delivery-cost free">free</span>
+                </p>
+                <p>
+                  <span class="h5">Total:</span>
+                  <span class="total-price">58</span>
+                  <span class="rouble">$</span>
+                </p>
+              </div>
+              <!-- // Order costs -->
+            </div>
 
-							</div>
-						</div>
-					</div>
-					<!-- // Roll -->
+            <!-- Checkout -->
+            <div id="order-form" class="card-body border-top">
+              <h5 class="card-title">Checkout</h5>
+              <form>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your phone number..."
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary">Order</button>
+              </form>
+            </div>
+            <!-- // Checkout -->
+          </div>
+          <!-- // Cart -->
+        </div>
+      </div>
+    </div>
 
-					<!-- Roll -->
-					<div class="col-md-6">
-						<div class="card mb-4" data-id="04">
-							<img class="product-img" src="img/roll/philadelphia.jpg" alt="">
-							<div class="card-body text-center">
-								<h4 class="item-title">Philadelphia</h4>
-								<p><small data-items-in-box class="text-muted">6 st.</small></p>
-
-								<div class="details-wrapper">
-									<div class="items counter-wrapper">
-										<div class="items__control" data-action="minus">-</div>
-										<div class="items__current" data-counter>1</div>
-										<div class="items__control" data-action="plus">+</div>
-									</div>
-
-									<div class="price">
-										<div class="price__weight">230g.</div>
-										<div class="price__currency">320 $</div>
-									</div>
-
-								</div>
-
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">
-									+ buy now
-								</button>
-
-							</div>
-						</div>
-					</div>
-					<!-- // Roll -->
-
-				</div>
-			</div>
-			<div class="col-md-4">
-
-				<!-- Cart -->
-				<div class="card mb-4">
-					<div class="card-body">
-						<h5 class="card-title">Your order</h4>
-						<div data-cart-empty class="alert alert-secondary" role="alert">
-							Cart is empty
-						</div>
-						<!-- cart-wrapper -->
-						<div class="cart-wrapper">
-
-							<!-- Cart item -->
-							<div class="cart-item" data-id="02">
-								<div class="cart-item__top">
-									<div class="cart-item__img">
-										<img src="img/roll/california-tempura.jpg" alt="">
-									</div>
-									<div class="cart-item__desc">
-										<div class="cart-item__title">California Tempura</div>
-										<div class="cart-item__weight">6 st. / 205g.</div>
-
-										<!-- cart-item__details -->
-										<div class="cart-item__details">
-
-											<div class="items items--small counter-wrapper">
-												<div class="items__control" data-action="minus">-</div>
-												<div class="items__current" data-counter="">1</div>
-												<div class="items__control" data-action="plus">+</div>
-											</div>
-
-											<div class="price">
-												<div class="price__currency">250 $</div>
-											</div>
-
-										</div>
-										<!-- // cart-item__details -->
-
-									</div>
-								</div>
-							</div>
-							<!-- // Cart item -->
-
-						</div>
-						<!-- // cart-wrapper -->
-
-						<!-- Order costs -->
-						<div class="cart-total">
-							<p><span class="h5">Delivery:</span> <span class="delivery-cost free">free</span> </p>
-							<p><span class="h5">Total:</span> <span class="total-price">130</span> <span class="rouble">$</span></p>
-						</div>
-						<!-- // Order costs -->
-
-					</div>
-
-					<!-- Checkout -->
-					<div id="order-form" class="card-body border-top">
-						<h5 class="card-title">Checkout</h4>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Your phone number...">
-							</div>
-							<button type="submit" class="btn btn-primary">Order</button>
-						</form>
-					</div>
-					<!-- // Checkout -->
-
-				</div>
-				<!-- // Cart -->
-
-
-			</div>
-		</div>
-	</div>
-
-	<!-- Scripts -->
-
-</body>
-
+    <!-- Scripts -->
+  </body>
 </html>
