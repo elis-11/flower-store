@@ -107,9 +107,7 @@ h3, h4 {
     border-color: #eb5a1e;
 }
 
-.cart-item {
-
-}
+/* .cart-item {} */
 
 .cart-item__top {
 	display: flex;
@@ -119,9 +117,7 @@ h3, h4 {
 	margin-bottom: 15px;
 }
 
-.cart-item__img  {
-
-}
+/* .cart-item__img  {} */
 
 .cart-item__img img {
 	max-width: 100px;
@@ -164,9 +160,7 @@ h3, h4 {
 	font-weight: 500;
 }
 
-.delivery-cost {
-
-}
+/* .delivery-cost {} */
 
 .free {
 	color: #0EA107;
@@ -182,4 +176,8 @@ h3, h4 {
 
 .none {
 	display: none;
+}
+
+.red {
+	width: 1.6em;
 }
