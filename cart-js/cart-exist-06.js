@@ -23,18 +23,18 @@ window.addEventListener("click", (event) => {
     };
     console.log(productInfo);
 
-    //! 03 check if there is such a product in cart
+    //! 06 check if there is such a product in cart
     const itemInCart = cartWrapper.querySelector(
       `[data-id="${productInfo.id}"]`
     );
 
-    //! 03 if product is in cart
+    //! 06 if product is in cart
     if (itemInCart) {
       const counterElem = itemInCart.querySelector("[data-counter]");
       counterElem.innerHTML =
         parseInt(counterElem.innerHTML) + parseInt(productInfo.counter);
     } else {
-      //! 03 if product is not in cart
+      //! 06 if product is not in cart
       // put all collected data
       const cartItemHTML = `
     <div class="cart-item" data-id="${productInfo.id}">
@@ -70,7 +70,7 @@ window.addEventListener("click", (event) => {
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
     }
 
-    //! 03 clear counter
+    //! 06 clear counter
     card.querySelector("[data-counter]").innerHTML = "1";
   }
 });

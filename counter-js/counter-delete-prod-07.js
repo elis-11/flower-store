@@ -23,12 +23,12 @@ window.addEventListener("click", (event) => {
     if (parseInt(counter.innerHTML) > 1) {
       counter.innerHTML = --counter.innerHTML; // - 1 item to the cart
 
-      //! 04 check prod in cart
+      //! 07 check prod in cart
     } else if (
       event.target.closest(".cart-wrapper") && parseInt(counter.innerHTML) === 1
     ) {
       console.log(" in cart");
-      //! 04 delete prod
+      //! 07 delete prod
       event.target.closest(".cart-item").remove();
     }
   }
