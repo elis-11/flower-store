@@ -76,5 +76,7 @@ window.addEventListener("click", (event) => {
       // 08 show cart-status  empty / full
       toggleCartStatus()
 
+      // 10 count price of all products
+      calcCartPrice()
   }
 });

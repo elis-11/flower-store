@@ -25,14 +25,26 @@ window.addEventListener("click", (event) => {
 
       // 07 check prod in cart
     } else if (
-      event.target.closest(".cart-wrapper") && parseInt(counter.innerHTML) === 1
+      event.target.closest(".cart-wrapper") &&
+      parseInt(counter.innerHTML) === 1
     ) {
       console.log(" in cart");
       // 07 delete prod
       event.target.closest(".cart-item").remove();
 
       // 08 show cart-status  empty / full
-      toggleCartStatus()
+      toggleCartStatus();
+
+      // 10 check click an plus or minus in cart
+      calcCartPrice();
     }
+  }
+
+  // 10 check click an plus or minus in cart
+  if (
+    event.target.hasAttribute("data-action") &&
+    event.target.closest(".cart-wrapper")
+  ) {
+    calcCartPrice();
   }
 });
