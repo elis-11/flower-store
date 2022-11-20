@@ -13,23 +13,26 @@ window.addEventListener("click", (event) => {
 
   // event-z.2  target-zel  dataset-all buttons plus action-click
 
-  //! check if the element is button Plus
+  // check if the element is button Plus
   if (event.target.dataset.action === "plus") {
     counter.innerHTML = ++counter.innerHTML; // add 1 item to the cart
   }
 
-  //! check if the element is button Minus
+  // check if the element is button Minus
   if (event.target.dataset.action === "minus") {
     if (parseInt(counter.innerHTML) > 1) {
       counter.innerHTML = --counter.innerHTML; // - 1 item to the cart
 
-      //! 07 check prod in cart
+      // 07 check prod in cart
     } else if (
       event.target.closest(".cart-wrapper") && parseInt(counter.innerHTML) === 1
     ) {
       console.log(" in cart");
-      //! 07 delete prod
+      // 07 delete prod
       event.target.closest(".cart-item").remove();
+
+      // 08 show cart-status  empty / full
+      toggleCartStatus()
     }
   }
 });
