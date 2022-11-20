@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
       rel="stylesheet"
     />
+    <script defer src="./toggle/toggleCartStatus-08.js"></script>
     <script defer src="./counter-js/counter-delete-prod-07.js"></script>
     <script defer src="./cart-js/cart-exist-06.js"></script>
   </head>
@@ -60,7 +61,7 @@
                     type="button"
                     class="btn btn-block btn-outline-warning"
                   >
-                    + buy now
+                    buy now
                   </button>
                 </div>
               </div>
@@ -95,7 +96,7 @@
                     type="button"
                     class="btn btn-block btn-outline-warning"
                   >
-                    + buy now
+                    buy now
                   </button>
                 </div>
               </div>
@@ -130,7 +131,7 @@
                     type="button"
                     class="btn btn-block btn-outline-warning"
                   >
-                    + buy now
+                    buy now
                   </button>
                 </div>
               </div>
@@ -165,7 +166,7 @@
                     type="button"
                     class="btn btn-block btn-outline-warning"
                   >
-                    + buy now
+                    buy now
                   </button>
                 </div>
               </div>
@@ -178,7 +179,8 @@
           <div class="card mb-4">
             <div class="card-body">
               <h5 class="card-title">Your order</h5>
-              <div data-cart-empty class="alert alert-secondary" role="alert">
+              <!-- <h5>{cartWrapper.children.length}</h5> -->
+              <div data-cart-empty class="alert alert-secondary " role="alert">
                 Cart is empty
               </div>
               <!-- cart-wrapper -->
