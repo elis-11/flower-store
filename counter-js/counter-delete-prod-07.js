@@ -36,7 +36,7 @@ window.addEventListener("click", (event) => {
       toggleCartStatus();
 
       // 10 check click an plus or minus in cart
-      calcCartPrice();
+      calcCartPriceAndDelivery();
     }
   }
 
@@ -45,6 +45,6 @@ window.addEventListener("click", (event) => {
     event.target.hasAttribute("data-action") &&
     event.target.closest(".cart-wrapper")
   ) {
-    calcCartPrice();
+    calcCartPriceAndDelivery();
   }
 });
