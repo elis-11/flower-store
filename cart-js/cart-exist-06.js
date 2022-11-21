@@ -77,6 +77,6 @@ window.addEventListener("click", (event) => {
       toggleCartStatus()
 
       // 10 count price of all products
-      calcCartPrice()
+      calcCartPriceAndDelivery()
   }
 });

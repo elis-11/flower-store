@@ -2,6 +2,7 @@ const calcCartPriceAndDelivery = () => {
   const cartWrapper = document.querySelector(".cart-wrapper");
   const priceElements = cartWrapper.querySelectorAll(".price__currency");
   const totalPriceEl = document.querySelector(".total-price");
+  const deliveryCost = document.querySelector('.delivery-cost');
 
   // price total
   let priceTotal = 0;
@@ -19,4 +20,13 @@ const calcCartPriceAndDelivery = () => {
 
   // show price on screen
   totalPriceEl.innerHTML = priceTotal;
+
+  if(priceTotal >= 100){
+    deliveryCost.classList.add('free')  // add free
+    deliveryCost.innerHTML = 'free'     // add text 'free'
+  } else {
+    deliveryCost.classList.remove('free')
+    deliveryCost.innerHTML = '10 €'
+  }
+
 };
