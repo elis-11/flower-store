@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext"
       rel="stylesheet"
     />
+    <script defer src="./render/renderProduct.js"></script>
     <script defer src="./total/calcCartPriceAndDelivery-11.js"></script>
     <script defer src="./toggle/toggleCartStatus-09.js"></script>
     <script defer src="./counter-js/counter-delete-prod-07.js"></script>
@@ -31,7 +32,7 @@
     <div class="container mb-5">
       <div class="row">
         <div class="col-md-8">
-          <div class="row">
+          <div class="row" id="products-container">
             <!-- Flower --1-->
             <div class="col-md-6">
               <div class="card mb-4" data-id="01">
@@ -69,110 +70,6 @@
             </div>
             <!-- // Flower -->
 
-            <!-- Flower --2-->
-            <div class="col-md-6">
-              <div class="card mb-4" data-id="02">
-                <img class="product-img" src="img/22.png" alt="" />
-                <div class="card-body text-center">
-                  <h4 class="item-title">Peach roses</h4>
-                  <p>
-                    <small data-items-in-box class="text-muted">23 st.</small>
-                  </p>
-
-                  <div class="details-wrapper">
-                    <div class="items counter-wrapper">
-                      <div class="items__control" data-action="minus">-</div>
-                      <div class="items__current" data-counter>1</div>
-                      <div class="items__control" data-action="plus">+</div>
-                    </div>
-
-                    <div class="price">
-                      <div class="price__weight">1150 g.</div>
-                      <div class="price__currency">56 €</div>
-                    </div>
-                  </div>
-
-                  <button
-                    data-cart
-                    type="button"
-                    class="btn btn-block btn-outline-warning"
-                  >
-                    buy now
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- // Flower -->
-
-            <!-- Flower --3-->
-            <div class="col-md-6">
-              <div class="card mb-4" data-id="03">
-                <img class="product-img" src="img/33.png" alt="" />
-                <div class="card-body text-center">
-                  <h4 class="item-title">Beautiful Bunch of 15 Red Roses</h4>
-                  <p>
-                    <small data-items-in-box class="text-muted">15 st.</small>
-                  </p>
-
-                  <div class="details-wrapper">
-                    <div class="items counter-wrapper">
-                      <div class="items__control" data-action="minus">-</div>
-                      <div class="items__current" data-counter>1</div>
-                      <div class="items__control" data-action="plus">+</div>
-                    </div>
-
-                    <div class="price">
-                      <div class="price__weight">700 g.</div>
-                      <div class="price__currency">39 €</div>
-                    </div>
-                  </div>
-
-                  <button
-                    data-cart
-                    type="button"
-                    class="btn btn-block btn-outline-warning"
-                  >
-                    buy now
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- // Flower -->
-
-            <!-- Flower --4-->
-            <div class="col-md-6">
-              <div class="card mb-4" data-id="04">
-                <img class="product-img" src="img/44.png" alt="" />
-                <div class="card-body text-center">
-                  <h4 class="item-title">40 Red Roses</h4>
-                  <p>
-                    <small data-items-in-box class="text-muted">40 st.</small>
-                  </p>
-
-                  <div class="details-wrapper">
-                    <div class="items counter-wrapper">
-                      <div class="items__control" data-action="minus">-</div>
-                      <div class="items__current" data-counter>1</div>
-                      <div class="items__control" data-action="plus">+</div>
-                    </div>
-
-                    <div class="price">
-                      <div class="price__weight">1500 g.</div>
-                      <div class="price__currency">62 €</div>
-                    </div>
-                  </div>
-
-                  <button
-                    data-cart
-                    type="button"
-                    class="btn btn-block btn-outline-warning"
-                  >
-                    buy now
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- // Flower -->
           </div>
         </div>
         <div class="col-md-4">
