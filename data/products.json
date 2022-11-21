@@ -21,7 +21,7 @@
         "itemsInBox": 15,
         "weight": 700,
         "price": 39,
-        "imgSrc": "11.png"   
+        "imgSrc": "33.png"   
     },
     {
         "id": "04",
@@ -29,6 +29,6 @@
         "itemsInBox": 40,
         "weight": 1500,
         "price": 62,
-        "imgSrc": "11.png"   
+        "imgSrc": "44.png"   
     }
 ]
