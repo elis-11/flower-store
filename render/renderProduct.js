@@ -1,15 +1,20 @@
 //! get DATA from Product.json
 const productsContainer = document.querySelector("#products-container");
 
-getProducts();
+getProducts(); // start render
 
+// async function get data from Product.json
 async function getProducts() {
+
+  // get data from Product.json
     const response = await fetch("./data/products.json");
     console.log(response);
-    
+
+    // parse data from JSON to js
     const productsArray = await response.json(); // formatiruet to JSON format
     console.log(productsArray);
-    
+
+    // start render / display products
     renderProducts(productsArray); //
 
 };
@@ -54,3 +59,5 @@ function renderProducts(productsArray) {
         productsContainer.insertAdjacentHTML('beforeend', productHTML)
   });
 };
+
+// https://www.youtube.com/watch?v=pIgyoL5FjgI&list=LL&index=12
